@@ -1,0 +1,21 @@
+<div class="container">
+    <h2>List Example</h2>
+   
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Age</th>
+          <th>Image</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor ="let items of data.data">
+          <td>{{items.name}}</td>
+          <td>{{items.age}}</td>
+          <td><img src="{{items.profile_image}}" height="50" width="50"></td>
+        </tr>      
+        
+      </tbody>
+    </table>
+  </div>

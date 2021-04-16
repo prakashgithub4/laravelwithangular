@@ -1,0 +1,19 @@
+<div class="container">
+    <h2>Vertical (basic) form</h2>
+    <form [formGroup]="form" (ngSubmit)="_onSubmit()">
+      <div class="form-group">
+        <label for="email">name:</label>
+        <input type="text" class="form-control" id="name" placeholder="Enter email" formControlName="name">
+      </div>
+      <div class="form-group">
+        <label for="pwd">Age:</label>
+        <input type="test" class="form-control" id="age" placeholder="Enter password" formControlName="age">
+      </div>
+      <div class="form-group">
+        <label for="pwd">Photo:</label>
+        <input type="file" class="form-control" id="photo"  (change)="_onChange($event)">
+      </div>
+      
+      <button type="submit" class="btn btn-default">Submit</button>
+    </form>
+  </div>
